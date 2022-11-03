@@ -3,6 +3,7 @@ const age = document.querySelector(".age");
 const footer = document.getElementById("copyrightText");
 const menu = document.querySelector(".toggle");
 const ul = document.querySelector(".menu-nav");
+const li = document.querySelectorAll(".menu-nav li");
 
 window.addEventListener("scroll", () => {
   nav.classList.toggle("sticky", window.scrollY > 0);
@@ -20,3 +21,8 @@ const toggleMenu = () => {
   menu.classList.toggle("active");
   ul.classList.toggle("active");
 };
+
+menu.addEventListener("click", toggleMenu);
+li.forEach((link) => {
+  link.addEventListener("click", toggleMenu);
+});
