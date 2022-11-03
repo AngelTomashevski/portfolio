@@ -325,6 +325,8 @@ img {
   padding: 0.8rem;
 }
 
+/* RESPONSIVE WEB PAGE */
+
 @media (max-width: 991px) {
   header,
   header.sticky {
@@ -436,6 +438,19 @@ img {
   .content .w-50 img {
     display: block;
     margin: 0 auto;
+  }
+
+  .heading-bottom a {
+    font-size: 0.8rem;
+  }
+
+  .info {
+    padding-left: 1.5rem;
+  }
+
+  .heading-bottom {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .skillsBox,
