@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/5d455a9ab5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu-nav">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+    <section class="banner" id="home">
+      <div class="text-box">
+        <h2>Hello, I'm</h2>
+        <h2 class="banner-name">Angel Tomashevski</h2>
+        <h3>I'm a FrontEnd Web Developer</h3>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="heading">
+        <p>Get to know me</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div class="w-50">
+          <img
+            src="./assets/profile-picture.jpg"
+            alt="profile-picture"
+            class="aboutMeImage"
+          />
+        </div>
+        <div class="contentBox w-50">
+          <h3>Who am I?</h3>
+          <h2>
+            I'm <b>Angel Tomashevski</b>, a <em>FrontEnd Web Developer</em>
+          </h2>
+          <p>
+            I'm responsible, self-motivated, organized financial accountant
+            determined to migrate to a programmer. I enjoy programming and I
+            finished succesfully 9 months Front-End academy in Code Academy
+            Education in Skopje, Macedonia. Also, I have completed more than
+            five courses on Udemy for Javascript and React library.
+          </p>
+          <p>
+            I'm hard worker and persistent in every step that I'm taking in
+            life. I want to learn,improve and extend my knowledge so I can
+            achieve to be more competitive on the market. I'm able to work in a
+            multicultural environments and I have good adaptability. I love
+            cycling, running and playing chess.
+          </p>
+          <div class="heading-bottom">
+            <a href="./assets/AngelTomasevski.doc" target="_blank" class="btn"
+              >Download CV</a
+            >
+            <div class="info">
+              <b>Name:</b> Angel Tomashevski <br />
+              <b>Age:</b><span class="age"></span>
+            </div>
+            <div class="info">
+              <b>Email:</b> angeltomsevski@hotmail.com <br />
+              <b>Location:</b> Skopje, Macedonia
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="heading white">
+        <h2>My skills</h2>
+        <p>Skills which I know</p>
+      </div>
+      <div class="content">
+        <div class="skillsBox">
+          <i class="fa-brands fa-html5 fa-4x"></i>
+          <h3>HTML</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum
+            consectetur fugit eos
+          </p>
+        </div>
+        <div class="skillsBox">
+          <i class="fa-brands fa-css3-alt fa-4x"></i>
+          <h3>CSS</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum
+            consectetur fugit eos
+          </p>
+        </div>
+        <div class="skillsBox">
+          <i class="fa-brands fa-js fa-4x"></i>
+          <h3>JAVASCRIPT</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum
+            consectetur fugit eos
+          </p>
+        </div>
+        <div class="skillsBox">
+          <i class="fa-brands fa-react fa-4x"></i>
+          <h3>REACT</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum
+            consectetur fugit eos
+          </p>
+        </div>
+        <div class="skillsBox">
+          <iconify-icon icon="simple-icons:redux" class="fa-4x"></iconify-icon>
+          <h3>REDUX</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum
+            consectetur fugit eos
+          </p>
+        </div>
+        <div class="skillsBox">
+          <iconify-icon
+            icon="akar-icons:figma-fill"
+            class="fa-4x"
+          ></iconify-icon>
+          <h3>FIGMA</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eum
+            consectetur fugit eos
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="heading">
+        <h2>My projects</h2>
+        <p>Showcasing some of my Projects</p>
+      </div>
+      <div class="content">
+        <div class="projectsBox">
+          <a
+            href="https://github.com/AngelTomashevski/quiz-app"
+            target="_blank"
+          >
+            <img src="./assets/quiz.png" alt="quiz project" />
+            <p class="link-description">
+              Quiz project made with React and Redux Toolkit and data from API
+            </p>
+          </a>
+        </div>
+        <div class="projectsBox">
+          <a
+            href="https://github.com/AngelTomashevski/rick-morty-app"
+            target="_blank"
+          >
+            <img src="./assets/rickandmorty.png" alt="rick and morty project" />
+            <p class="link-description">
+              Rick and Morty Project made with React and data from API
+            </p>
+          </a>
+        </div>
+        <div class="projectsBox">
+          <a
+            href="https://github.com/AngelTomashevski/Weather-App"
+            target="_blank"
+          >
+            <img src="./assets/weather.png" alt="weather project" />
+            <p class="link-description">
+              Weather project made with REACT and data from API
+            </p>
+          </a>
+        </div>
+        <div class="projectsBox">
+          <a
+            href="https://github.com/AngelTomashevski/searchBarCountries"
+            target="_blank"
+          >
+            <img
+              src="./assets/search-country.png"
+              alt="searchBarCountry project"
+            />
+            <p class="link-description">
+              SearchBarCountry project made with Javascript
+            </p>
+          </a>
+        </div>
+        <div class="projectsBox">
+          <a href="https://github.com/AngelTomashevski/notes" target="_blank">
+            <img src="./assets/notes.png" alt="notes project" />
+            <p class="link-description">
+              Daily notes project made with Javascript
+            </p>
+          </a>
+        </div>
+        <div class="projectsBox">
+          <a
+            href="https://github.com/AngelTomashevski/bliss-/tree/main"
+            target="_blank"
+          >
+            <img src="./assets/bliss.png" alt="notes project" />
+            <p class="link-description">
+              Bliss website project made with CSS- grid and flex layouts
+            </p>
+          </a>
+        </div>
+        <div class="heading">
+          <a
+            href="https://github.com/AngelTomashevski?tab=repositories"
+            target="_blank"
+            class="btn"
+            >View all my projects in GitHub</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="heading white">
+        <p>
+          If I match on currents open positions in your company please contact
+          me
+        </p>
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="content">
+        <div class="contactInfo">
+          <h3>Contact Info</h3>
+
+          <div class="contactInfoBox">
+            <div class="box">
+              <div class="icon">
+                <iconify-icon icon="akar-icons:location"></iconify-icon>
+              </div>
+              <div class="contactText">
+                <h3>Address</h3>
+                <address>
+                  Kocho Racin <br />
+                  num 7 - 3/3 <br />
+                  Skopje, Macedonia
+                </address>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <iconify-icon icon="akar-icons:phone"></iconify-icon>
+              </div>
+              <div class="contactText">
+                <h3>Phone num:</h3>
+                <p>+38970556458</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="icon">
+                <iconify-icon icon="carbon:email"></iconify-icon>
+              </div>
+              <div class="contactText">
+                <h3>Email Address</h3>
+                <p>angeltomasevski@hotmail.com</p>
+              </div>
+            </div>
+            <br />
+            <h3>Social Connect</h3>
+            <div class="socialBox">
+              <div class="icon">
+                <a
+                  href="https://www.linkedin.com/in/angel-tomashevski-7296355a/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a
+                  href="https://www.facebook.com/angel.tomasevski"
+                  target="_blank"
+                  ><i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+              <div class="icon">
+                <a
+                  href="https://www.instagram.com/angel.tomasevski/"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="copyright">
+      <p id="copyrightText"></p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
