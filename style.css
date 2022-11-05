@@ -442,7 +442,7 @@ img {
 
   .heading-bottom a {
     font-size: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 1.3rem;
   }
 
   .info {
@@ -483,11 +483,18 @@ img {
   }
 
   .heading a {
+    color: white;
     font-size: 0.8rem;
     margin: 0 auto;
   }
 
-  .socialBox {
-    text-align: center;
+  .contactInfoBox .box .icon {
+    color: white;
+    min-height: 40px;
+    padding-right: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.6rem;
   }
 }
