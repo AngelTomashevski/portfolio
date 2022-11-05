@@ -332,6 +332,14 @@ img {
 /* RESPONSIVE WEB PAGE */
 
 @media (max-width: 991px) {
+  section {
+    padding: 30px;
+  }
+
+  .heading {
+    margin-bottom: 15px;
+  }
+
   header,
   header.sticky {
     padding: 20px 50px;
