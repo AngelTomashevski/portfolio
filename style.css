@@ -241,7 +241,7 @@ img {
 .projectsBox a {
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .projectsBox img {
@@ -259,6 +259,10 @@ img {
   border: 1px solid black;
   transition: 0.5s;
   opacity: 1;
+}
+
+.heading a {
+  color: white;
 }
 
 /* CONTACT */
@@ -459,42 +463,24 @@ img {
     text-align: center;
     margin: 10px auto;
   }
+
   .projectsBox {
-    display: flex;
-    justify-content: center;
-  }
-
-  .projectsBox img {
-    max-width: 70%;
-    opacity: 0.8;
-  }
-
-  .projectsBox img:hover {
-    box-shadow: 0 0 20px 5px rgb(171, 171, 171);
-    transform: scale(1.05);
-    border: 1px solid black;
-    transition: 0.5s;
-    opacity: 1;
-  }
-
-  .link-description {
-    max-width: 70%;
-    margin: 0 auto;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
   }
 
   .heading a {
-    color: white;
     font-size: 0.8rem;
-    margin: 0 auto;
   }
 
   .contactInfoBox .box .icon {
     color: white;
     min-height: 40px;
-    padding-right: 20px;
+    padding-right: 15px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
