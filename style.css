@@ -411,7 +411,7 @@ img {
   }
   .text-box {
     position: relative;
-    top: 190px;
+    top: 220px;
   }
 
   .btn {
@@ -442,6 +442,7 @@ img {
 
   .heading-bottom a {
     font-size: 0.8rem;
+    margin-top: 1.5rem;
   }
 
   .info {
@@ -449,13 +450,44 @@ img {
   }
 
   .heading-bottom {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 
-  .skillsBox,
-  .projectsBox {
+  .skillsBox {
     text-align: center;
     margin: 10px auto;
+  }
+  .projectsBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .projectsBox img {
+    max-width: 70%;
+    opacity: 0.8;
+  }
+
+  .projectsBox img:hover {
+    box-shadow: 0 0 20px 5px rgb(171, 171, 171);
+    transform: scale(1.05);
+    border: 1px solid black;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .link-description {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  .heading a {
+    font-size: 0.8rem;
+    margin: 0 auto;
+  }
+
+  .socialBox {
+    text-align: center;
   }
 }
