@@ -154,6 +154,7 @@ header.sticky ul li a {
   display: flex;
   flex-direction: column;
   padding: 10px 0;
+  line-height: 1.5;
 }
 
 .contentBox h2 {
@@ -167,6 +168,7 @@ header.sticky ul li a {
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
 }
+
 img {
   max-width: 100%;
 }
@@ -175,7 +177,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-align: center;
+  gap: 20px;
 }
 
 .info {
@@ -221,7 +223,6 @@ img {
   border-bottom: 3px solid green;
   border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%;
-  cursor: pointer;
 }
 
 /* PROJECTS */
@@ -412,21 +413,21 @@ img {
   }
 
   .banner h2 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .banner h3 {
     font-size: 1.1rem;
   }
+
   .text-box {
     position: absolute;
     bottom: 3%;
-    left: 25%;
+    left: 10%;
   }
 
   .btn {
-    margin-top: 0.7rem;
-    font-size: 1rem;
+    margin-top: 0.6rem;
     padding: 10px 20px;
   }
 
@@ -447,7 +448,7 @@ img {
   .contentBox h3 {
     font-size: 1.11rem;
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.3;
   }
 
   .content .w-50 img {
@@ -461,13 +462,14 @@ img {
   }
 
   .info {
-    padding-left: 1.5rem;
+    text-align: center;
+    line-height: 1.3;
   }
 
   .heading-bottom {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .skillsBox {
@@ -493,5 +495,46 @@ img {
     align-items: flex-start;
     justify-content: center;
     font-size: 1.4rem;
+  }
+
+  .socialBox {
+    margin: auto;
+  }
+}
+
+@media (max-width: 288px) {
+  section {
+    padding: 30px 30px;
+  }
+
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  header,
+  header.sticky {
+    padding: 20px 30px;
+    z-index: 2;
+  }
+
+  header .menu-nav {
+    display: none;
+  }
+
+  .banner {
+    position: relative;
+  }
+  .text-box {
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+  }
+
+  .banner h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner h3 {
+    font-size: 1rem;
   }
 }
